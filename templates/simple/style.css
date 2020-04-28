@@ -1,0 +1,187 @@
+/* Enable this to see the invoice structure */
+table, tr, td, div, p, h1, h2, h3, h4, h5, h6 {
+	/*border: 1px solid black;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+table th,
+table td {
+	padding: 5px;
+}
+
+table {
+	border-spacing: 0;
+	width: 100%;
+	line-height: normal;
+	color: #555;
+	font-size: 11px;
+	margin-left: 80px; /* Invoice margin */
+	margin-right: 80px; /* Invoice margin */
+}
+
+/*** Start Header Classes ***/
+table.top td {
+	padding-top: 60px;
+	vertical-align: middle;
+}
+
+table.top td:nth-child(2) {
+	text-align: right;
+}
+
+td.details {
+	width: 30%;
+	text-align: right;
+	font-size: 12px;
+}
+
+td.info {
+	width: 25%;
+	text-align: left;
+	font-size: 12px;
+}
+
+/*** Start Body Classes ***/
+div.title {
+	padding: 5px;
+}
+
+div.title div {
+	width: 35%;
+	float: left;
+	margin-left: 80px; /* Invoice margin */
+	line-height: 55px;
+}
+
+div.title div.watermark {
+	float: right;
+	margin-right: 80px; /* Invoice margin */
+	line-height: normal;
+}
+
+div.title div.watermark h2 {
+	font-family: serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px 7px;
+	border-radius: 10px;
+	text-align: center;
+	width: 130px;
+	float: right;
+}
+
+div.title div.watermark h2.green {
+	color: green;
+	border: 3px solid green;
+}
+
+div.title div.watermark h2.red {
+	color: red;
+	border: 3px solid red;
+}
+
+table tr.information td {
+	vertical-align: top;
+	padding-bottom: 20px;
+}
+
+table tr.information td.primary {
+	width: 50%;
+}
+
+table tr.information td.bill-to {
+	width: 25%;
+}
+
+table tr.information td.ship-to {
+	width: 25%;
+	text-align: right;
+}
+
+table tr.heading th,
+table tr.item td {
+	text-align: right;
+	vertical-align: top;
+	padding: 5px;
+}
+
+table tr.heading th:nth-child(1),
+table tr.item td:nth-child(1) {
+	text-align: left;
+	width: 50%;
+}
+
+table tr.item td {
+	border-bottom: 1px solid #eee;
+}
+
+table tr.spacer td {
+	padding-top: 20px;
+}
+
+/** Totals **/
+table tr.total td {
+	border-top: 2px solid #eee;
+	padding: 5px;
+}
+
+table tr.total td.custom-text {
+	width: 50%;
+	vertical-align: top;
+	border: none;
+}
+
+table tr.total td:nth-child(2) {
+	text-align: left;
+	width: 25%;
+}
+
+table tr.total td:nth-child(3) {
+	text-align: right;
+	width: 25%;
+}
+
+/* Black lines for the Totals */
+table tr.total td.order-total-ex-vat,
+table tr.total td.order-total-incl-vat,
+table tr.total td.order-total {
+	border-top: 2px solid black;
+	font-weight: bold;
+}
+
+small.shipped_via {
+	display: none;
+}
+
+table.notes {
+	margin-top: 40px;
+}
+
+div.terms {
+	margin-top: 40px;
+	position: absolute;
+	bottom: 120px;
+}
+
+div.terms table tr td {
+	border: 1px solid #000;
+}
+
+/*** Start Footer Classes ***/
+table.footer {
+	padding-top: 20px;
+	padding-bottom: 20px; /* Invoice margin */
+	width: 100%;
+}
+
+table.footer tr td {
+	vertical-align: bottom;
+}
+
+table.footer tr td:nth-child(2) {
+	text-align: right;
+}
