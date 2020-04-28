@@ -3,9 +3,11 @@
  * Plugin Name: Wilcity Invoice Addon
  * Author: Wilcity
  * Author URI: https://wilcityservice.com
- * Author URI: https://wilcityservice.com
- * Description: Allow to download Payment Invoice
- *Version: 1.0
+ * Plugin URI: https://wilcityservice.com/wiloke-plugins/wilcity-invoice-addon
+ * Description: The default invoice does not support some languages like to Thailand, Arab. This plugin resolved it
+ * Text Domain: wilcity-invoice-addon
+ * Domain Path: /languages
+ * Version: 1.0
  */
 
 add_action('wiloke-listing-tools/run-extension', 'wilcityInvoiceAddonLoad');
