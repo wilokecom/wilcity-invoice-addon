@@ -101,7 +101,7 @@
                     <tr>
                         <td class="title">
                             <?php if ($this->hasLogo()) : ?>
-                                <img src="<?php echo esc_url($this->getLogoUrl()); ?>"
+                                <img style="max-width: 200px;" src="<?php echo esc_url($this->getLogoUrl()); ?>"
                                      alt="<?php echo esc_attr($this->getSiteTitle()); ?>">
                             <?php else: ?>
                                 <h1><?php echo esc_html($this->getSiteTitle()); ?>></h1>
